@@ -100,7 +100,7 @@ colData(se) #metadata about the samples
 colData(se)<-DataFrame(info) #take the sample info and assign it as the metadata
 se$exposure<- as.factor(se$exposure)
 se$tissue_type<- as.factor(se$tissue_type)#organizing structure of groups
-se$sex<- as.factor(se$sex)#organizing structure of groups
+#se$sex<- as.factor(se$sex)#organizing structure of groups
 #se$batch_id<- as.factor(se$batch_id)
 se$exposure<- relevel(se$exposure, 
                            "control") # tells the system which group is "control"
